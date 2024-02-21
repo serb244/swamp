@@ -1,9 +1,8 @@
-import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:swamp/core/router/router_consts.dart';
 
-import '../../fetaures/buttons/presentation/pages/buttons_screen.dart';
-import '../../fetaures/home/presentation/pages/home_screen.dart';
+import '../../features/buttons/presentation/pages/buttons_screen.dart';
+import '../../features/home/presentation/pages/home_screen.dart';
 import 'error_screen.dart';
 
 class AppRouter {
