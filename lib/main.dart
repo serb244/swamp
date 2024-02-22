@@ -29,5 +29,4 @@ void main() {
 
 void catchUnhandledExceptions(Object error, StackTrace? stack) {
     MyLogger().log(message: "runZonedGuarded error",error:  error, logLevel: LogLevel.error, stackTrace: stack, writeToFile: true);
-    // MyLogger().logError(message: 'Stack: $stack', error: stack);
 }
