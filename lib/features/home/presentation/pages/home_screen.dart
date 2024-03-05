@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
+import 'package:swamp/core/presentation/pages/grid_menu.dart';
 
-import 'items_list.dart';
+import 'home_menu_list.dart';
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -16,23 +16,7 @@ class HomeScreen extends StatelessWidget {
         title: const Text("Home Screen"),
         actions: actionsWidgets,
       ),
-      body: GridView.builder(
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
-        itemCount: itemsList.length,
-        itemBuilder: (context, index) {
-          return InkWell(
-            onTap: () => context.goNamed(itemsList[index].routeName),
-            child: Container(
-              decoration: BoxDecoration(
-                border: Border.all(),
-                color: itemsList[index].color,
-              ),
-              alignment: Alignment.center,
-              child: Text(itemsList[index].name),
-            ),
-          );
-        },
-      ),
+      body: GridMenu(menuList: homeMenuList),
     );
   }
 }
