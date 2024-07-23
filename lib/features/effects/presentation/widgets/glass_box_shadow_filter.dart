@@ -11,7 +11,7 @@ class GlassBoxShadow extends StatelessWidget {
       width: double.infinity,
       height: 100,
       decoration: BoxDecoration(
-        image: DecorationImage(
+        image: const DecorationImage(
           image: NetworkImage('https://storage.googleapis.com/cms-storage-bucket/75c5b74c32dfd7b7e8f3.jpg'),
           fit: BoxFit.fill,
         ),
@@ -20,7 +20,7 @@ class GlassBoxShadow extends StatelessWidget {
         boxShadow: [
           BoxShadow(
             color: Colors.black.withOpacity(0.1),
-            offset: Offset(0.0, 10.0),
+            offset: const Offset(0.0, 10.0),
             blurRadius: 10.0,
           ),
         ],
@@ -28,8 +28,8 @@ class GlassBoxShadow extends StatelessWidget {
       child: BackdropFilter(
         filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
         child: Container(
-          padding: EdgeInsets.all(20.0),
-          child: Text(
+          padding: const EdgeInsets.all(20.0),
+          child: const Text(
             "GlassBoxShadow",
             style: TextStyle(color: Colors.black),
           ),

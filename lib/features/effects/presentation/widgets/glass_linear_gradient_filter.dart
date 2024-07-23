@@ -22,8 +22,8 @@ class GlassLinearGradient extends StatelessWidget {
       child: BackdropFilter(
         filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
         child: Container(
-          padding: EdgeInsets.all(20.0),
-          child: Text(
+          padding: const EdgeInsets.all(20.0),
+          child: const Text(
             "LinearGradient",
             style: TextStyle(color: Colors.black),
           ),
